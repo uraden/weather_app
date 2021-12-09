@@ -1,38 +1,124 @@
 .App {
   text-align: center;
+  font-family: "Lucida Console", "Lucida Console", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main{
+  margin-top: 30px;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.curent_city{
+  margin-top: 50px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.current_date{
+  width: 300px;
+  height: 150px;
+  
+}
+
+.weather_icon{
+  width: 250px;
+  height: 250px;
+  border-right: 1px solid black;
+}
+
+.weather_temp{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200px;
+  height: 150px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.icon_img{
+  position: relative;
+  width:220px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title_weather{
+  position: relative;
+  margin-top: -20px;
+}
+.search_bar{
+  position: relative;
+  margin-top: 30px !important;
+}
+.search_input{
+  width: 40%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0.4px solid black;
+}
+
+.search_btn{
+  width: 70px;
+  position: relative;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+  padding: 10px;
+  font-weight: 900;
+}
+.search_btn:hover{
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #adacac;
+  color:black;
+}
+
+.title{
+
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.chart{
+  margin: auto;
+  width: 95%;
+}
+
+
+.weather_Chart{
+  margin-bottom: 50px;
+}
+
+.weather_prep{
+  width: 28px;
+  height: 18px;
+  background-color: green;
+}
+
+.weather_prep_head{
+  
+  position: relative;
+  height: 800px;
+  right: 27px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width:80%;
+  margin: auto;
+  margin-bottom: 20px;
 }
