@@ -1,9 +1,10 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
 import { AiOutlineSearch } from "react-icons/ai"
+import { registerables } from 'chart.js';
 
 import Axios from 'axios'
-import { Line } from 'react-chartjs-2'
+
 import {
   Chart as ChartJS,
   LinearScale,
@@ -294,40 +295,7 @@ const data_test = {
           </div>
           
           <div className="chart">
-  {/*    <Line 
-        data={{
-          labels: testme,
-          datasets: [
-            
-            {
-              label: 'New Data set',
-              data: [2, 10, 5, 5, 6, 7, 5, 4, 7, 5, 2, 3, -2, 19, 13, 5, 2, 3, 12, 14, 14, 7, 2, 3, 12, 12, -3, 5, 2, 3],
-              borderColor: 'rgba(255,204,1)',
-              fill: 'green',
-              borderWidth: 3,
-              backgroundColor: 'rgba(255,245,211)',
   
-              fill:'start'
-            },
-
-          ],
-        }}
-        height={600}
-        width={420}
-        options={{
-          maintainAspectRatio: false,
-          scales:{
-            yAxes:[
-              {
-                ticks:{
-                  beginAtZero: true
-                }
-              }
-            ]
-          }
-        }}
-      />
-      */}
   <h1>Weather History of {cityNname} city</h1>
 <Chart type='bar' data={data_test} options={options} className="weather_Chart"/>
 
